@@ -1,0 +1,39 @@
+body{
+    height: 100;
+    background-color: teal;
+}
+.accordion
+{
+    background-color : #A9A9A9;
+
+    height: 100%;
+    border-radius: 25px;
+    border: 2px solid beige;
+    padding: 20px;
+}
+
+button{
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid darkslategray;
+}
+
+.nav-item
+{
+   text-emphasis-color: white;
+}
+.col1{
+    height: 100%;
+     background-color : #A9A9A9;
+     width: 30%;
+   
+}
+
+.col2{
+    height: 100%;
+ 
+     width: 70%;
+   
+}
+
+

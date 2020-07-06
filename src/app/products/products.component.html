@@ -1,0 +1,22 @@
+<table class="table" id ="productTable">
+    <thead class="thead-light fadeIn first">
+      <tr class="fadeIn second">
+      
+        <th scope="col">Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tr *ngFor ="let product of products" class="fadeIn third">
+      <td> {{product.title}}</td>
+      <td>{{product.price}}</td>
+      <td> <a routerLink={{product.id}} >Edit </a> | <a>Delete</a></td>
+    </tr>
+    <tbody>
+     
+    </tbody>
+  </table>
+  <router-outlet>
+
+  </router-outlet>
+  

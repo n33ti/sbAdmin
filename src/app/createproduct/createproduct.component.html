@@ -1,0 +1,22 @@
+
+<div class="wrapper fadeInDown" style="text-align: center;">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+  
+      <!-- Icon -->
+      <div class="fadeIn first">
+        <img src="https://img.icons8.com/all/500/add-list.png" id="icon" alt="User Icon" />
+      </div>
+  
+      <!-- Login Form -->
+      <form [formGroup]="angForm" novalidate (submit)="submit()" >
+        <input type="text" id="ptitle" class="fadeIn second form-control"  formControlName="title"  name="create" placeholder="Product name">
+        <input type="number" id="pprice" class="fadeIn third form-control" formControlName="price" name="create" placeholder="Price">
+        <input type="submit" class="fadeIn fourth" value="Create">
+      </form>
+  
+      <!-- Remind Passowrd -->
+     
+  
+    </div>
+  </div>

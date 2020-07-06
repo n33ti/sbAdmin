@@ -3,16 +3,33 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { ProductsComponent } from './products/products.component';
+import { CreateproductComponent } from './createproduct/createproduct.component';
+import {LocalStorageService} from './storage.service'
+import { StorageServiceModule } from 'ngx-webstorage-service';
+import { ReactiveFormsModule } from '@angular/forms';
+import { EditproductComponent } from './editproduct/editproduct.component';
+import { FormsModule } from '@angular/forms';
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    RegisterComponent,
+    ProductsComponent,
+    CreateproductComponent,
+    EditproductComponent
   ],
-  imports: [
+  imports: [ReactiveFormsModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [ StorageServiceModule, LocalStorageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
